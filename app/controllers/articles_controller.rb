@@ -1,6 +1,6 @@
 class ArticlesController < ApplicationController
     skip_before_action :verify_authenticity_token
-
+    
     def read
         render json: Article.all
     end

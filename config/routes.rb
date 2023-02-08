@@ -11,10 +11,11 @@ Rails.application.routes.draw do
     put "/articles/:id", to:"articles#update"
     delete "/articles/delete/:id", to:"articles#delete"
 
-    get "/users", to:"users#index"
-    post "/users", to:"users#create"
-    put "/users/:id", to:"users#update"
-    delete "/users/:id", to:"users#delete"
+    #tasks refers to users
+    # get "/users", to:"users#index"
+    # post "/users", to:"users#create"
+    # put "/users/:id", to:"users#update"
+    # delete "/users/:id", to:"users#delete"
 
     get "/tasks", to:"task#read"
     get "/tasks/:id", to:"task#index"

@@ -1,6 +1,6 @@
 class TaskController < ApplicationController
     skip_before_action :verify_authenticity_token
-    
+
         def read
             render json: Task.all
         end
